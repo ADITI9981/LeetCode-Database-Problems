@@ -34,3 +34,4 @@ Table: MovieRating
 This table contains the rating of a movie by a user in their review.
 created_at is the user's review date. 
  
+QUERY:
