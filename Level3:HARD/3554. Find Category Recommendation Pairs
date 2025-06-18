@@ -85,9 +85,5 @@ Output:
 | Clothing    | Electronics | 3              |
 | Electronics | Sports      | 3              |
 +-------------+-------------+----------------+
-Explanation:
 
-Books-Clothing:
-User 1 purchased products from Books (102) and Clothing (201)
-User 2 purchased products from Books (102, 103) and Clothing (201)
-User 5 purchased pro
+QUERY:
