@@ -57,3 +57,5 @@ Hyphenated word "modern-day" becomes "Modern-Day"
 For content_id = 4:
 Contains two hyphenated words: "web-based" → "Web-Based"
 And "FRONT-end" → "Front-End"
+
+QUERY:
