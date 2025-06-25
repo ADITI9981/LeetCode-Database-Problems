@@ -53,4 +53,4 @@ Explanation:
 192.168.1 is invalid because it has only 3 octets
 The output table is ordered by invalid_count, ip in descending order respectively.
 
-QUERY:
+Query:
