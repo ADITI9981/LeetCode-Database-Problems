@@ -35,3 +35,22 @@ This table contains the rating of a movie by a user in their review.
 created_at is the user's review date. 
  
 QUERY:
+(
+    select name as results
+    from Users U
+    join MovieRating mr on U.user_id = mr.user_id
+    group by U.user_id
+    order by count(*) desc ,name asc
+    LIMIT 1
+)
+
+union all
+(
+    select title as results
+    from Movies m
+    join MovieRating mr on m.movie_id = mr.movie_id
+    WHERE mr.created_at BETWEEN '2020-02-01' AND '2020-02-29'
+    group by m.movie_id
+    order by AVG(mr.rating) desc ,title asc
+    LIMIT 1
+)
