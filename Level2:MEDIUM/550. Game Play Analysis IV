@@ -38,3 +38,16 @@ Output:
 | 0.33      |
 
 QUERY:
+
+# Write your MySQL query statement below
+select
+    ROUND(count(distinct Activity.player_id) * 1.0/ (select count(distinct player_id) from Activity),2 )as fraction
+from Activity
+join (
+    select player_id, min(event_date) as first_login
+    from Activity
+    group by player_id
+) as firstlogin
+on Activity.player_id = firstlogin.player_id
+  AND Activity.event_date = Date_add(firstlogin.first_login, INTERVAL 1 day)
+    
