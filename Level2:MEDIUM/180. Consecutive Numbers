@@ -43,7 +43,7 @@ Explanation: 1 is the only number that appears consecutively for at least three 
 
 QUERY:
 # Write your MySQL query statement below
-select l1.num as consecutiveNums
+select DISTINCT l1.num as consecutiveNums
 from Logs l1
 join Logs l2 on l1.id = l2.id -1
 join Logs l3 on l2.id = l3.id -1
